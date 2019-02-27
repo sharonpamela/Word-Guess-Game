@@ -1,0 +1,167 @@
+/* body{
+    background-color: #063c8d;
+    background-image: url("../images/bg.jpg");
+   
+} */
+
+.local-container {
+    margin: auto;
+}
+
+.local-tittle {
+    width: 100%;
+    height: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 96px;
+    text-align: center;
+    align-content: center;
+    background-color: #509CD2;
+    color: #FFFFFF;    
+}
+
+.local-instructions{
+    width: 100%;
+    height: 50px;
+    background: #FFFFF2;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    align-content: center;
+    color: #0B3E91;
+}
+
+.local-content {
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+.stats{
+    width: 100%;
+    height: 500px;
+    background: #791E94;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+}
+
+.turtle{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+}
+img {
+    max-width:100%;
+    height:auto;   
+}
+   
+.userProg{
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+
+.lettersGuessed{
+    font-size: 24px;
+    text-align: center;
+    color: #791E94;
+}
+
+.guessedLetter{
+    height: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.progressUser{
+    height: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.gameOver{
+    background-image: url("../images/game-over.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 576px;
+    background-color: #509CD2;
+    text-align: center;
+}
+.local-button-cont{
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    color: #FFFFFF; 
+}
+
+.thank-you{
+    width: 100%;
+    height: 100px;
+    padding-top: 150px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    color: #FFFFFF; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .tittle {
+    grid-column-start: first-col;
+    grid-column-end: auto;
+    grid-row-start: first-row;
+    grid-row-end: last-row;
+  }
+
+  .item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: main;
+  }
+  .item-c {
+    grid-area: sidebar;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header"
+      "main main main main"
+      "main side side side"
+      "main side side side"
+      "main side side side";
+  } */

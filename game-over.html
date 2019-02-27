@@ -10,13 +10,12 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Added link to css and styling -->
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+    
 </head>
 <body> 
     <div class="container local-container">
@@ -30,31 +29,21 @@
         <!-- Row 2 -->
         <div class="row local-instructions">
             <div class="col-md-12">
-                <h3>Try to guess the word by typing the letters!</h3>
+                <h3>Game Over!</h3>
             </div>
         </div>
 
         <!-- Row 3 -->
-        <div class="row local-content">
-            <!-- Row 3.1 -->
-            <div class="col-md-4 stats">
-                <div class="numGuesses">Guesses Remaining: <span class="numGuess">10</span></div>
-                <div class="wins">Wins: <span class="numWins">0</span></div>
-            </div>
-            <!-- Row 3.2 -->
-            <div class="col-md-8 turtle">
-                <!-- Row 3.2.1 -->
-                <div class="row guessedLetter"> 
-                    <div class="col-md-12">
-                        <div class="lettersGuessed"></div>
-                    </div>
-                </div> 
-                <!-- Row 3.2.2 -->
-                <div class="row progressUser">
-                    <div class="col-md-12">
-                        <div class="userProg" id="userprogress"></div>
-                    </div> 
-                </div>       
+        <div class="row">
+            <div class="col-md-12 gameOver">
+                <div class="col-md-6">
+                    <div class="thank-you">Thank you for playing!</div>  
+                    <button type="button" class="btn btn-outline-light local-button-cont" id="play-again">Play Again?</button>  
+                    <!-- <div class="wins">Wins: <span class="numWins">0</span></div>   --> 
+                </div>
+                <div class="col-md-6">
+                </div>
+                
             </div>
         </div> 
     </div>
@@ -70,6 +59,5 @@
 - fix the bug not resdenring guesses left =0 and last entered wrong input 
 - show all of the letters of the alphabet and mark off the ones used
 - have two modes easy and hard
-- design the game's theme
 -->
 </html>
