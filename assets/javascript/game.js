@@ -26,7 +26,7 @@ document.onkeyup = function(event){
     console.log("not yet guessed: " + notYetGuessed);
    
     if ((numGuesses > 0) && (notYetGuessed == -1)){
-        lettersGuessed.push(userInput);
+        // lettersGuessed.push(userInput);
         isMatchFound = false; //reset matchfound before every comparison
         compareAndReplace();
         //re-draw the the progress of the current word again
@@ -65,10 +65,9 @@ function initGame(){
 //draw the progress of the current word being guessed
 function render(){
     document.getElementById("userprogress").textContent = userProgress.join(" ");
-    $(".lettersGuessed").text(""); //reset the letters guesses
     $(".numGuess").text(numGuesses);
     $(".numWins").text(wins);
-    $(".lettersGuessed").append(userInput);
+    // $(".lettersGuessed").append(userInput);
 }
 
 //loop to run thru the array of the current word characters and replace 
@@ -90,6 +89,9 @@ function compareAndReplace(){
     if (isMatchFound == false) {
         if (numGuesses > 0){
             numGuesses--;
+            lettersGuessed.push(userInput);
+            $(".lettersGuessed").append(userInput);
+
         }    
         if (numGuesses == 0){
             window.location.href = 'game-over.html';        

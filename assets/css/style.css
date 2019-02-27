@@ -43,7 +43,7 @@
 }
 .stats{
     width: 100%;
-    height: 500px;
+    height: 420px;
     background: #791E94;
     font-size: 24px;
     color: #FFFFFF;
@@ -95,7 +95,7 @@ img {
     background-image: url("../images/game-over.jpg");
     background-repeat: no-repeat;
     width: 100%;
-    height: 576px;
+    height: 420px;
     background-color: #509CD2;
     text-align: center;
 }
