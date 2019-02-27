@@ -90,8 +90,7 @@ function compareAndReplace(){
         if (numGuesses > 0){
             numGuesses--;
             lettersGuessed.push(userInput);
-            $(".lettersGuessed").append(userInput);
-
+            $(".lettersGuessed").text(lettersGuessed.join(" "));
         }    
         if (numGuesses == 0){
             window.location.href = 'game-over.html';        
