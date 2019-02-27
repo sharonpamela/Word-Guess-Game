@@ -35,13 +35,15 @@ document.onkeyup = function(event){
 }
 
 // Play again on click.
-$("#play-again").on("click", function() {
-    // init the game and re-direct user to the original page
-    wins = 0;
-    numGuesses = 10;
-    window.location.href = 'index.html'; 
-    initGame(); 
-  });
+// $("#play-again").on("click", function() {
+//     // init the game and re-direct user to the original page
+//     wins = 0;
+//     numGuesses = 10;
+//     window.location.href = 'index.html'; 
+//     initGame(); 
+//   });
+// init the game and re-direct user to the original page 
+$("#play-again").on("click", initGame());
 
 //initialize the game
 function initGame(){
